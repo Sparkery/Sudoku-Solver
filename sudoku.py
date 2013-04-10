@@ -1,5 +1,5 @@
 def solution(nodes, color):
-  for X in nodes:
+	for X in nodes:
 		for Y in nodes[X]:
 			if color[X] == color[Y] or color[X] is None:
 				return False
