@@ -97,14 +97,8 @@ for X in range(81):
 				nodes[str(X)].append(str(Y))
 
 
-f = open("top95.txt", "r")
-
-for X in range(95):
-	color = {}
-	for Y in range(81):
-		color[str(Y)] = None
-	game = list(f.readline())[:-1]
-	#print(game, len(game))
+	game = list("4.....8.5.3..........7......2.....6.....8.4......1.......6.3.7.5..2.....1.4......")
+	
 	for X in range(len(game)):
 		if game[X] != ".":
 			color[str(X)] = int(game[X])
